@@ -1,0 +1,21 @@
+Banking/
+├── CurrentAccount/   # Projet Java pour le compte courant
+├── Central/          # Projet Java pour le central (consultation)
+├── Loan/             # Projet Java pour les prêts
+├── DepositAccount/   # Projet .NET pour le compte de dépôt
+├── db/               # Scripts MySQL partagés
+└── docs/             # Documentation optionnelle
+
+Sous Dossier/
+[NomProjet]/
+├── pom.xml                # Fichier de configuration Maven
+├── src/
+│   ├── main/
+│   │   ├── java/         # Code source Java
+│   │   │   └── com/
+│   │   │       └── banking/
+│   │   │           └── App.java  # Fichier de base (à renommer/supprimer)
+│   │   └── resources/    # Ressources (ex. configs)
+│   └── test/
+│       └── java/         # Tests unitaires
+└── target/               # Dossier généré pour builds (ignoré pour l'instant)
