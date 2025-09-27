@@ -1,4 +1,4 @@
-// src/main/java/com/banking/servlet/CurrentAccountServlet.java
+// Banking/CurrentAccount/src/main/java/com/banking/servlet/CurrentAccountServlet.java
 package com.banking.servlet;
 
 import java.io.IOException;
@@ -19,6 +19,7 @@ public class CurrentAccountServlet extends HttpServlet {
     @EJB
     private CurrentAccountRemote currentAccountBean;
 
+    @Override
     protected void doGet(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
         String action = request.getParameter("action");
         int idCompte = Integer.parseInt(request.getParameter("idCompte"));
@@ -33,6 +34,7 @@ public class CurrentAccountServlet extends HttpServlet {
         }
     }
 
+    @Override
     protected void doPost(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
         String action = request.getParameter("action");
         int idCompte = Integer.parseInt(request.getParameter("idCompte"));

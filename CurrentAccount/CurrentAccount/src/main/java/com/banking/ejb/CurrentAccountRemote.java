@@ -1,4 +1,4 @@
-// src/main/java/com/banking/ejb/CurrentAccountRemote.java
+// Banking/CurrentAccount/src/main/java/com/banking/ejb/CurrentAccountRemote.java
 package com.banking.ejb;
 
 import java.math.BigDecimal;

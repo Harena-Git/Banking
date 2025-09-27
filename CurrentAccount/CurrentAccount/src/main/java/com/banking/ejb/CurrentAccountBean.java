@@ -1,4 +1,4 @@
-// src/main/java/com/banking/ejb/CurrentAccountBean.java
+// Banking/CurrentAccount/src/main/java/com/banking/ejb/CurrentAccountBean.java
 package com.banking.ejb;
 
 import com.banking.model.Compte;
@@ -10,14 +10,14 @@ import jakarta.persistence.PersistenceContext;
 import jakarta.persistence.Query;
 
 import java.math.BigDecimal;
-import java.util.Date;
+import java.time.LocalDate;
 import java.util.List;
 
 @Stateless
 @Remote(CurrentAccountRemote.class)
 public class CurrentAccountBean implements CurrentAccountRemote {
 
-    @PersistenceContext(unitName = "bankingPU")
+    @PersistenceContext(unitName = "currentAccountPU")
     private EntityManager em;
 
     @Override
@@ -38,7 +38,7 @@ public class CurrentAccountBean implements CurrentAccountRemote {
 
             Transaction transaction = new Transaction();
             transaction.setIdCompte(idCompte);
-            transaction.setDateTransaction(new Date());
+            transaction.setDateTransaction(LocalDate.now());
             transaction.setMontant(montant);
             transaction.setTypeTransaction("depot");
             em.persist(transaction);
@@ -54,7 +54,7 @@ public class CurrentAccountBean implements CurrentAccountRemote {
 
             Transaction transaction = new Transaction();
             transaction.setIdCompte(idCompte);
-            transaction.setDateTransaction(new Date());
+            transaction.setDateTransaction(LocalDate.now());
             transaction.setMontant(montant.negate());
             transaction.setTypeTransaction("retrait");
             em.persist(transaction);
@@ -66,18 +66,18 @@ public class CurrentAccountBean implements CurrentAccountRemote {
         retrait(idCompteSource, montant);
         depot(idCompteDest, montant);
 
-        // Enregistrer la transaction de virement pour source
+        // Enregistrer transaction pour source
         Transaction transactionSource = new Transaction();
         transactionSource.setIdCompte(idCompteSource);
-        transactionSource.setDateTransaction(new Date());
+        transactionSource.setDateTransaction(LocalDate.now());
         transactionSource.setMontant(montant.negate());
         transactionSource.setTypeTransaction("virement");
         em.persist(transactionSource);
 
-        // Enregistrer pour destination
+        // Enregistrer pour destination (note: si dest est dans une autre base, cela nécessitera un appel inter-projet plus tard)
         Transaction transactionDest = new Transaction();
         transactionDest.setIdCompte(idCompteDest);
-        transactionDest.setDateTransaction(new Date());
+        transactionDest.setDateTransaction(LocalDate.now());
         transactionDest.setMontant(montant);
         transactionDest.setTypeTransaction("virement");
         em.persist(transactionDest);

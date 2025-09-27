@@ -1,8 +1,8 @@
-<%-- src/main/webapp/index.jsp --%>
+<%-- Banking/CurrentAccount/src/main/webapp/index.jsp --%>
 <%@ page contentType="text/html;charset=UTF-8" language="java" %>
 <html>
 <head>
-    <title>Banking - Current Account</title>
+    <title>Banking - Compte Courant</title>
 </head>
 <body>
     <h1>Bienvenue sur le projet Compte Courant</h1>

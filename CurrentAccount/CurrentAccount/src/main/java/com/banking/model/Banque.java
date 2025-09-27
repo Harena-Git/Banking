@@ -1,4 +1,4 @@
-// src/main/java/com/banking/model/Banque.java
+// Banking/CurrentAccount/src/main/java/com/banking/model/Banque.java
 package com.banking.model;
 
 import jakarta.persistence.Column;
@@ -19,7 +19,7 @@ public class Banque {
     @Column(name = "localisation")
     private String localisation;
 
-    // Getters and Setters
+    // Getters et Setters
     public int getIdBanque() {
         return idBanque;
     }

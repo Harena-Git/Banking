@@ -1,4 +1,4 @@
-// src/main/java/com/banking/model/Compte.java
+// Banking/CurrentAccount/src/main/java/com/banking/model/Compte.java
 package com.banking.model;
 
 import java.math.BigDecimal;
@@ -37,7 +37,7 @@ public class Compte {
     @JoinColumn(name = "id_banque", insertable = false, updatable = false)
     private Banque banque;
 
-    // Getters and Setters
+    // Getters et Setters
     public int getIdCompte() {
         return idCompte;
     }

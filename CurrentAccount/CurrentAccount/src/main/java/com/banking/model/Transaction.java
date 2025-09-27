@@ -1,8 +1,8 @@
-// src/main/java/com/banking/model/Transaction.java
+// Banking/CurrentAccount/src/main/java/com/banking/model/Transaction.java
 package com.banking.model;
 
 import java.math.BigDecimal;
-import java.util.Date;
+import java.time.LocalDate;
 
 import jakarta.persistence.Column;
 import jakarta.persistence.Entity;
@@ -10,8 +10,6 @@ import jakarta.persistence.Id;
 import jakarta.persistence.JoinColumn;
 import jakarta.persistence.ManyToOne;
 import jakarta.persistence.Table;
-import jakarta.persistence.Temporal;
-import jakarta.persistence.TemporalType;
 
 @Entity
 @Table(name = "transaction")
@@ -24,8 +22,7 @@ public class Transaction {
     private int idCompte;
 
     @Column(name = "date_transaction", nullable = false)
-    @Temporal(TemporalType.DATE)
-    private Date dateTransaction;
+    private LocalDate dateTransaction;
 
     @Column(name = "montant", nullable = false)
     private BigDecimal montant;
@@ -37,7 +34,7 @@ public class Transaction {
     @JoinColumn(name = "id_compte", insertable = false, updatable = false)
     private Compte compte;
 
-    // Getters and Setters
+    // Getters et Setters
     public int getIdTransaction() {
         return idTransaction;
     }
@@ -54,11 +51,11 @@ public class Transaction {
         this.idCompte = idCompte;
     }
 
-    public Date getDateTransaction() {
+    public LocalDate getDateTransaction() {
         return dateTransaction;
     }
 
-    public void setDateTransaction(Date dateTransaction) {
+    public void setDateTransaction(LocalDate dateTransaction) {
         this.dateTransaction = dateTransaction;
     }
 

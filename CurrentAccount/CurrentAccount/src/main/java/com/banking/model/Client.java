@@ -1,9 +1,12 @@
-// src/main/java/com/banking/model/Client.java
+// Banking/CurrentAccount/src/main/java/com/banking/model/Client.java
 package com.banking.model;
 
-import jakarta.persistence.*;
+import java.time.LocalDate;
 
-import java.util.Date;
+import jakarta.persistence.Column;
+import jakarta.persistence.Entity;
+import jakarta.persistence.Id;
+import jakarta.persistence.Table;
 
 @Entity
 @Table(name = "client")
@@ -22,10 +25,9 @@ public class Client {
     private String adresse;
 
     @Column(name = "date_naissance")
-    @Temporal(TemporalType.DATE)
-    private Date dateNaissance;
+    private LocalDate dateNaissance;
 
-    // Getters and Setters
+    // Getters et Setters
     public int getIdClient() {
         return idClient;
     }
@@ -58,11 +60,11 @@ public class Client {
         this.adresse = adresse;
     }
 
-    public Date getDateNaissance() {
+    public LocalDate getDateNaissance() {
         return dateNaissance;
     }
 
-    public void setDateNaissance(Date dateNaissance) {
+    public void setDateNaissance(LocalDate dateNaissance) {
         this.dateNaissance = dateNaissance;
     }
 }
