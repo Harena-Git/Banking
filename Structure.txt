@@ -1,21 +1,32 @@
 Banking/
-├── CurrentAccount/   # Projet Java pour le compte courant
-├── Central/          # Projet Java pour le central (consultation)
-├── Loan/             # Projet Java pour les prêts
-├── DepositAccount/   # Projet .NET pour le compte de dépôt
-├── db/               # Scripts MySQL partagés
-└── docs/             # Documentation optionnelle
-
-Sous Dossier/
-[NomProjet]/
-├── pom.xml                # Fichier de configuration Maven
-├── src/
-│   ├── main/
-│   │   ├── java/         # Code source Java
-│   │   │   └── com/
-│   │   │       └── banking/
-│   │   │           └── App.java  # Fichier de base (à renommer/supprimer)
-│   │   └── resources/    # Ressources (ex. configs)
-│   └── test/
-│       └── java/         # Tests unitaires
-└── target/               # Dossier généré pour builds (ignoré pour l'instant)
+└── CurrentAccount/
+    ├── pom.xml
+    ├── src/
+    │   ├── main/
+    │   │   ├── java/
+    │   │   │   └── com/
+    │   │   │       └── banking/
+    │   │   │           └── currentaccount/
+    │   │   │               ├── CurrentAccountApplication.java
+    │   │   │               ├── entity/
+    │   │   │               │   ├── CompteCourant.java
+    │   │   │               │   └── Transaction.java
+    │   │   │               ├── repository/
+    │   │   │               │   ├── CompteCourantRepository.java
+    │   │   │               │   └── TransactionRepository.java
+    │   │   │               ├── service/
+    │   │   │               │   ├── CompteCourantService.java
+    │   │   │               │   └── TransactionService.java
+    │   │   │               └── controller/
+    │   │   │                   ├── CompteCourantController.java
+    │   │   │                   └── TransactionController.java
+    │   │   └── resources/
+    │   │       ├── application.properties
+    │   │       └── schema.sql  # Script SQL pour init DB (optionnel, via Flyway ou direct)
+    │   └── test/
+    │       └── java/
+    │           └── com/
+    │               └── banking/
+    │                   └── currentaccount/
+    │                       └── CurrentAccountApplicationTests.java
+    └── README.md  # Optionnel pour docs
