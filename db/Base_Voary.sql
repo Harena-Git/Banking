@@ -162,7 +162,7 @@ CREATE TABLE Commissions(
    FOREIGN KEY(id_type_commission) REFERENCES Types_Commission(id_type_commission),
    FOREIGN KEY(id_type_carte) REFERENCES Types_Carte(id_type_carte)
 );
-
+   
 CREATE TABLE Soldes_Epargne(
    id_solde_epargne INTEGER,
    solde NUMERIC(15,2)   NOT NULL,
