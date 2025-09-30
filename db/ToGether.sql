@@ -1,4 +1,4 @@
--- Centra
+-- Central
 CREATE TABLE banque (
    id_banque INT AUTO_INCREMENT,
    nom_banque VARCHAR(50),
