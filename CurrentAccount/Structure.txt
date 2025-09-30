@@ -1,0 +1,37 @@
+CurrentAccount/
+├── pom.xml
+├── src/
+│   ├── main/
+│   │   ├── java/
+│   │   │   └── com/
+│   │   │       └── example/
+│   │   │           └── banking/
+│   │   │               └── currentaccount/
+│   │   │                   ├── controller/
+│   │   │                   │   ├── CompteCourantServlet.java
+│   │   │                   │   └── TransactionServlet.java
+│   │   │                   ├── dao/
+│   │   │                   │   ├── CompteCourantDAO.java
+│   │   │                   │   ├── TransactionDAO.java
+│   │   │                   │   └── DatabaseConnection.java
+│   │   │                   ├── model/
+│   │   │                   │   ├── CompteCourant.java
+│   │   │                   │   └── Transaction.java
+│   │   │                   ├── service/
+│   │   │                   │   ├── CompteCourantService.java
+│   │   │                   │   └── TransactionService.java
+│   │   │                   └── filter/
+│   │   │                       └── CorsFilter.java
+│   │   ├── webapp/
+│   │   │   ├── WEB-INF/
+│   │   │   │   └── web.xml
+│   │   │   └── index.jsp
+│   │   └── resources/
+│   │       └── database.properties
+│   └── test/
+│       └── java/
+│           └── com/
+│               └── example/
+│                   └── banking/
+│                       └── currentaccount/
+└── README.md
