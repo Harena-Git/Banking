@@ -1,0 +1,26 @@
+Banking/
+└── DepositAccount/
+    ├── DepositAccount.csproj
+    ├── Program.cs
+    ├── appsettings.json
+    ├── Properties/
+    │   └── launchSettings.json
+    ├── Models/
+    │   ├── Depot.cs
+    │   ├── Interet.cs
+    │   └── HistoriqueGeneraliser.cs
+    ├── Controllers/
+    │   ├── DepotController.cs
+    │   └── InteretController.cs
+    ├── Services/
+    │   ├── IDepotService.cs
+    │   ├── DepotService.cs
+    │   ├── IInteretService.cs
+    │   └── InteretService.cs
+    ├── Data/
+    │   ├── ApplicationDbContext.cs
+    │   └── Configurations/
+    │       ├── DepotConfiguration.cs
+    │       └── InteretConfiguration.cs
+    └── Migrations/
+        └── (dossier généré automatiquement par Entity Framework)
