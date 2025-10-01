@@ -1,0 +1,15 @@
+D:\Cours\Architecture_Mr_Tahina\Sujet 1 Banking\DepositAccount\publish\DepositAccount.exe
+D:\Cours\Architecture_Mr_Tahina\Sujet 1 Banking\DepositAccount\publish\appsettings.json
+D:\Cours\Architecture_Mr_Tahina\Sujet 1 Banking\DepositAccount\publish\DepositAccount.dll
+D:\Cours\Architecture_Mr_Tahina\Sujet 1 Banking\DepositAccount\publish\DepositAccount.runtimeconfig.json
+D:\Cours\Architecture_Mr_Tahina\Sujet 1 Banking\DepositAccount\publish\DepositAccount.pdb
+D:\Cours\Architecture_Mr_Tahina\Sujet 1 Banking\DepositAccount\publish\Microsoft.EntityFrameworkCore.dll
+D:\Cours\Architecture_Mr_Tahina\Sujet 1 Banking\DepositAccount\publish\Microsoft.EntityFrameworkCore.Abstractions.dll
+D:\Cours\Architecture_Mr_Tahina\Sujet 1 Banking\DepositAccount\publish\Microsoft.EntityFrameworkCore.Relational.dll
+D:\Cours\Architecture_Mr_Tahina\Sujet 1 Banking\DepositAccount\publish\Microsoft.OpenApi.dll
+D:\Cours\Architecture_Mr_Tahina\Sujet 1 Banking\DepositAccount\publish\MySqlConnector.dll
+D:\Cours\Architecture_Mr_Tahina\Sujet 1 Banking\DepositAccount\publish\Pomelo.EntityFrameworkCore.MySql.dll
+D:\Cours\Architecture_Mr_Tahina\Sujet 1 Banking\DepositAccount\publish\Swashbuckle.AspNetCore.Swagger.dll
+D:\Cours\Architecture_Mr_Tahina\Sujet 1 Banking\DepositAccount\publish\Swashbuckle.AspNetCore.SwaggerGen.dll
+D:\Cours\Architecture_Mr_Tahina\Sujet 1 Banking\DepositAccount\publish\Swashbuckle.AspNetCore.SwaggerUI.dll
+D:\Cours\Architecture_Mr_Tahina\Sujet 1 Banking\DepositAccount\publish\DepositAccount.deps.json

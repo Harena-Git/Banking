@@ -1,14 +1,18 @@
 package com.example.banking.central.service;
 
-import com.example.banking.central.client.CurrentAccountClient;
-import com.example.banking.central.client.DepositClient;
-import com.example.banking.central.client.LoanClient;
-import com.example.banking.central.model.*;
+import java.util.List;
+import java.util.Properties;
+
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 
-import java.util.List;
-import java.util.Properties;
+import com.example.banking.central.client.CurrentAccountClient;
+import com.example.banking.central.client.DepositClient;
+import com.example.banking.central.client.LoanClient;
+import com.example.banking.central.model.CompteAvecDetails;
+import com.example.banking.central.model.CompteInfo;
+import com.example.banking.central.model.DepotInfo;
+import com.example.banking.central.model.PretInfo;
 
 public class CentralService {
     private static final Logger logger = LoggerFactory.getLogger(CentralService.class);

@@ -1,7 +1,9 @@
 package com.example.banking.central.client;
 
-import com.example.banking.central.model.CompteInfo;
-import com.fasterxml.jackson.databind.ObjectMapper;
+import java.util.Arrays;
+import java.util.List;
+import java.util.Properties;
+
 import org.apache.hc.client5.http.classic.methods.HttpGet;
 import org.apache.hc.client5.http.impl.classic.CloseableHttpClient;
 import org.apache.hc.client5.http.impl.classic.CloseableHttpResponse;
@@ -10,9 +12,8 @@ import org.apache.hc.core5.http.io.entity.EntityUtils;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 
-import java.util.Arrays;
-import java.util.List;
-import java.util.Properties;
+import com.example.banking.central.model.CompteInfo;
+import com.fasterxml.jackson.databind.ObjectMapper;
 
 public class CurrentAccountClient {
     private static final Logger logger = LoggerFactory.getLogger(CurrentAccountClient.class);
@@ -25,7 +26,7 @@ public class CurrentAccountClient {
     }
     
     public CompteInfo getCompteById(Integer idCompte) {
-        String url = baseUrl + "/api/compte-courant/" + id;
+        String url = baseUrl + "/api/compte-courant/" + idCompte;  // CORRECTION: idCompte au lieu de id
         
         try (CloseableHttpClient httpClient = HttpClients.createDefault()) {
             HttpGet request = new HttpGet(url);

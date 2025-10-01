@@ -1,0 +1,12 @@
+{
+  "Version": 1,
+  "Hash": "1WiGCVem4Y2Qvh4ysDqaXs1gMf0WU8AhwUc8eq+QVGI=",
+  "Source": "DepositAccount",
+  "BasePath": "_content/DepositAccount",
+  "Mode": "Default",
+  "ManifestType": "Build",
+  "ReferencedProjectsConfiguration": [],
+  "DiscoveryPatterns": [],
+  "Assets": [],
+  "Endpoints": []
+}

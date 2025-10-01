@@ -1,25 +1,30 @@
 package com.example.banking.central.controller;
 
-import com.example.banking.central.model.*;
-import com.example.banking.central.service.CentralService;
-import com.fasterxml.jackson.databind.ObjectMapper;
-import org.slf4j.Logger;
-import org.slf4j.LoggerFactory;
-
-import jakarta.servlet.ServletException;
-import jakarta.servlet.http.HttpServlet;
-import jakarta.servlet.http.HttpServletRequest;
-import jakarta.servlet.http.HttpServletResponse;
 import java.io.IOException;
 import java.util.HashMap;
 import java.util.List;
 import java.util.Map;
 import java.util.Properties;
 
+import org.slf4j.Logger;
+import org.slf4j.LoggerFactory;
+
+import com.example.banking.central.model.CompteAvecDetails;
+import com.example.banking.central.model.CompteInfo;
+import com.example.banking.central.model.DepotInfo;
+import com.example.banking.central.model.PretInfo;
+import com.example.banking.central.service.CentralService;
+import com.fasterxml.jackson.databind.ObjectMapper;
+
+import jakarta.servlet.ServletException;
+import jakarta.servlet.http.HttpServlet;
+import jakarta.servlet.http.HttpServletRequest;
+import jakarta.servlet.http.HttpServletResponse;
+
 public class CentralServlet extends HttpServlet {
     private static final Logger logger = LoggerFactory.getLogger(CentralServlet.class);
     private CentralService centralService;
-    private final ObjectMapper objectMapper;
+    private ObjectMapper objectMapper;  // CORRECTION: Retirer final
     
     @Override
     public void init() throws ServletException {
@@ -39,7 +44,7 @@ public class CentralServlet extends HttpServlet {
             }
             
             this.centralService = new CentralService(config);
-            this.objectMapper = new ObjectMapper();
+            this.objectMapper = new ObjectMapper();  // CORRECTION: Initialisation dans init()
             
             logger.info("CentralServlet initialisé avec succès");
             
