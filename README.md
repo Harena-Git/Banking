@@ -4,7 +4,7 @@ Projet JAVA et C# qui utilise EJB et wildfly
 -- Base pour CurrentAccount
 CREATE DATABASE IF NOT EXISTS currentaccount_db;
 
--- Base pour Loan  
+-- Base pour Loan
 CREATE DATABASE IF NOT EXISTS loan_db;
 
 -- Base pour DepositAccount
