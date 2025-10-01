@@ -1,0 +1,12 @@
+# Nettoyer et compiler
+mvn clean compile
+
+# Construire le WAR
+mvn package
+
+# Déployer sur WildFly
+cp target/central.war /chemin/vers/wildfly/standalone/deployments/
+
+GET http://localhost:8080/central/api/central/health
+GET http://localhost:8080/central/api/central/compte/1
+GET http://localhost:8080/central/api/central/comptes
