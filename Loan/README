@@ -1,0 +1,51 @@
+# 🏦 Loan Microservice
+
+Microservice de gestion des prêts bancaires pour l'architecture Banking.
+
+## 📋 Fonctionnalités
+
+### Gestion des Prêts
+- Création et consultation de prêts
+- Gestion des statuts (EN_ATTENTE, APPROUVE, REJETE, REMBOURSE)
+- Association avec les comptes courants
+- Calcul automatique des mensualités
+
+### Gestion des Taux
+- Configuration des taux d'intérêt (FIXE, VARIABLE)
+- Historique des taux par prêt
+- Calculs financiers avancés
+
+## 🗃️ Base de Données
+
+### Tables
+- `pret` : Informations sur les prêts
+- `pret_values` : Configurations des taux d'intérêt
+
+### Script SQL
+Voir `Loan.sql` pour la structure complète.
+
+## 🚀 Déploiement
+
+### Build
+```bash
+mvn clean compile
+mvn package
+
+### Déploiement WildFly
+cp target/loan.war /chemin/vers/wildfly/standalone/deployments/
+
+
+## 🎉 **LE MICROSERVICE LOAN EST MAINTENANT COMPLET !** 🚀
+
+**Fonctionnalités incluses :**
+- ✅ Gestion complète des prêts
+- ✅ Configuration des taux d'intérêt  
+- ✅ Calcul automatique des mensualités
+- ✅ Workflow de statuts de prêt
+- ✅ API REST complète
+- ✅ Gestion d'erreurs robuste
+- ✅ Logging professionnel
+- ✅ Connection pooling MySQL
+- ✅ Documentation complète
+
+**Prochain microservice : Central ou DepositAccount ?** 😊

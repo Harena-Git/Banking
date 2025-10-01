@@ -1,0 +1,38 @@
+Banking/
+└── Loan/
+    ├── pom.xml
+    ├── src/
+    │   ├── main/
+    │   │   ├── java/
+    │   │   │   └── com/
+    │   │   │       └── example/
+    │   │   │           └── banking/
+    │   │   │               └── loan/
+    │   │   │                   ├── controller/
+    │   │   │                   │   ├── PretServlet.java
+    │   │   │                   │   └── PretValuesServlet.java
+    │   │   │                   ├── dao/
+    │   │   │                   │   ├── PretDAO.java
+    │   │   │                   │   ├── PretValuesDAO.java
+    │   │   │                   │   └── DatabaseConnection.java
+    │   │   │                   ├── model/
+    │   │   │                   │   ├── Pret.java
+    │   │   │                   │   └── PretValues.java
+    │   │   │                   ├── service/
+    │   │   │                   │   ├── PretService.java
+    │   │   │                   │   └── PretValuesService.java
+    │   │   │                   └── filter/
+    │   │   │                       └── CorsFilter.java
+    │   │   ├── webapp/
+    │   │   │   ├── WEB-INF/
+    │   │   │   │   └── web.xml
+    │   │   │   └── index.jsp
+    │   │   └── resources/
+    │   │       └── database.properties
+    │   └── test/
+    │       └── java/
+    │           └── com/
+    │               └── example/
+    │                   └── banking/
+    │                       └── loan/
+    └── README.md
