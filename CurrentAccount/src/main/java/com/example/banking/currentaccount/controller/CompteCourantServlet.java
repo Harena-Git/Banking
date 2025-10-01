@@ -1,20 +1,24 @@
 package com.example.banking.currentaccount.controller;
 
+import java.io.IOException;
+import java.math.BigDecimal;
+import java.util.HashMap;
+import java.util.List;
+import java.util.Map;
+import java.util.Optional;
+
+import org.slf4j.Logger;
+import org.slf4j.LoggerFactory;
+
 import com.example.banking.currentaccount.model.CompteCourant;
 import com.example.banking.currentaccount.model.Transaction;
 import com.example.banking.currentaccount.service.CompteCourantService;
 import com.fasterxml.jackson.databind.ObjectMapper;
-import org.slf4j.Logger;
-import org.slf4j.LoggerFactory;
 
 import jakarta.servlet.ServletException;
 import jakarta.servlet.http.HttpServlet;
 import jakarta.servlet.http.HttpServletRequest;
 import jakarta.servlet.http.HttpServletResponse;
-import java.io.IOException;
-import java.math.BigDecimal;
-import java.util.List;
-import java.util.Optional;
 
 public class CompteCourantServlet extends HttpServlet {
     private static final Logger logger = LoggerFactory.getLogger(CompteCourantServlet.class);
@@ -123,7 +127,10 @@ public class CompteCourantServlet extends HttpServlet {
                 
                 if (compte.getSoldeCompteCourant() != null) {
                     compteService.updateSolde(id, compte.getSoldeCompteCourant());
-                    sendJsonResponse(resp, HttpServletResponse.SC_OK, Map.of("message", "Solde mis à jour avec succès"));
+                    
+                    Map<String, String> response = new HashMap<>();
+                    response.put("message", "Solde mis à jour avec succès");
+                    sendJsonResponse(resp, HttpServletResponse.SC_OK, response);
                 } else {
                     sendErrorResponse(resp, HttpServletResponse.SC_BAD_REQUEST, "Solde requis");
                 }
@@ -160,7 +167,9 @@ public class CompteCourantServlet extends HttpServlet {
                 boolean deleted = compteService.deleteCompte(id);
                 
                 if (deleted) {
-                    sendJsonResponse(resp, HttpServletResponse.SC_OK, Map.of("message", "Compte supprimé avec succès"));
+                    Map<String, String> response = new HashMap<>();
+                    response.put("message", "Compte supprimé avec succès");
+                    sendJsonResponse(resp, HttpServletResponse.SC_OK, response);
                 } else {
                     sendErrorResponse(resp, HttpServletResponse.SC_NOT_FOUND, "Compte non trouvé");
                 }
@@ -185,6 +194,8 @@ public class CompteCourantServlet extends HttpServlet {
     
     private void sendErrorResponse(HttpServletResponse resp, int status, String message) throws IOException {
         resp.setStatus(status);
-        objectMapper.writeValue(resp.getWriter(), Map.of("error", message));
+        Map<String, String> errorResponse = new HashMap<>();
+        errorResponse.put("error", message);
+        objectMapper.writeValue(resp.getWriter(), errorResponse);
     }
 }

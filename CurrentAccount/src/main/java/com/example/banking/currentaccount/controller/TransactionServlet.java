@@ -1,6 +1,7 @@
 package com.example.banking.currentaccount.controller;
 
 import java.io.IOException;
+import java.util.HashMap;
 import java.util.List;
 import java.util.Map;
 
@@ -108,6 +109,8 @@ public class TransactionServlet extends HttpServlet {
     
     private void sendErrorResponse(HttpServletResponse resp, int status, String message) throws IOException {
         resp.setStatus(status);
-        objectMapper.writeValue(resp.getWriter(), Map.of("error", message));
+        Map<String, String> errorResponse = new HashMap<>();
+        errorResponse.put("error", message);
+        objectMapper.writeValue(resp.getWriter(), errorResponse);
     }
 }
