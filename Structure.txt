@@ -1,0 +1,32 @@
+Banking/
+└── CurrentAccount/
+    ├── pom.xml
+    ├── src/
+    │   ├── main/
+    │   │   ├── java/
+    │   │   │   └── com/
+    │   │   │       └── banking/
+    │   │   │           └── currentaccount/
+    │   │   │               ├── CurrentAccountApplication.java
+    │   │   │               ├── entity/
+    │   │   │               │   ├── CompteCourant.java
+    │   │   │               │   └── Transaction.java
+    │   │   │               ├── repository/
+    │   │   │               │   ├── CompteCourantRepository.java
+    │   │   │               │   └── TransactionRepository.java
+    │   │   │               ├── service/
+    │   │   │               │   ├── CompteCourantService.java
+    │   │   │               │   └── TransactionService.java
+    │   │   │               └── controller/
+    │   │   │                   ├── CompteCourantController.java
+    │   │   │                   └── TransactionController.java
+    │   │   └── resources/
+    │   │       ├── application.properties
+    │   │       └── schema.sql  # Script SQL pour init DB (optionnel, via Flyway ou direct)
+    │   └── test/
+    │       └── java/
+    │           └── com/
+    │               └── banking/
+    │                   └── currentaccount/
+    │                       └── CurrentAccountApplicationTests.java
+    └── README.md  # Optionnel pour docs
