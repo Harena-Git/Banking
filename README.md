@@ -45,7 +45,7 @@ standalone.bat
 Déployer les WARs :
 # Copier CurrentAccount
 cp "/D:/Cours/Architecture_Mr_Tahina/Sujet 1 Banking/CurrentAccount/target/currentaccount.war" "/chemin/vers/wildfly-37.0.1.Final/standalone/deployments/"
-
+    
 # Copier Loan
 cp "/D:/Cours/Architecture_Mr_Tahina/Sujet 1 Banking/Loan/target/loan.war" "/chemin/vers/wildfly-37.0.1.Final/standalone/deployments/"
 
