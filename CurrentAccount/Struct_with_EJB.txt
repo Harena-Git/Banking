@@ -1,0 +1,21 @@
+CurrentAccount/
+├── src/
+│   └── main/
+│       ├── java/
+│       │   └── com/
+│       │       └── example/
+│       │           └── banking/
+│       │               └── currentaccount/
+│       │                   ├── ejb/                          # NOUVEAU
+│       │                   │   ├── CompteCourantEJBRemote.java
+│       │                   │   ├── CompteCourantEJB.java
+│       │                   │   ├── TransactionEJBRemote.java
+│       │                   │   └── TransactionEJB.java
+│       │                   ├── service/
+│       │                   │   └── CompteCourantService.java # MODIFIÉ
+│       │                   └── controller/
+│       │                       └── CompteCourantServlet.java # INCHANGÉ
+│       └── resources/
+│           └── META-INF/
+│               └── ejb-jar.xml                              # NOUVEAU
+└── pom.xml                                                 # MODIFIÉ

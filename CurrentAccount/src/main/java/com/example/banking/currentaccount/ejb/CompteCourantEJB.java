@@ -7,45 +7,51 @@ import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 
 import java.util.List;
-import java.util.Optional;
 
+/**
+ * EJB Stateless pour la gestion des comptes courants
+ * Peut être appelé à distance via l'interface CompteCourantEJBRemote
+ */
 @Stateless
 public class CompteCourantEJB implements CompteCourantEJBRemote {
     private static final Logger logger = LoggerFactory.getLogger(CompteCourantEJB.class);
-    
+
     private final CompteCourantDAO compteCourantDAO;
-    
+
+    // Injection par constructeur
     public CompteCourantEJB() {
         this.compteCourantDAO = new CompteCourantDAO();
+        logger.info("EJB CompteCourantEJB initialisé");
     }
-    
+
     @Override
     public List<CompteCourant> getAllComptes() {
         logger.info("EJB - Récupération de tous les comptes");
         return compteCourantDAO.findAll();
     }
-    
+
     @Override
     public CompteCourant getCompteById(Integer id) {
         logger.info("EJB - Recherche du compte: {}", id);
-        Optional<CompteCourant> compte = compteCourantDAO.findById(id);
-        return compte.orElse(null);
+        return compteCourantDAO.findById(id).orElse(null);
     }
-    
+
     @Override
     public CompteCourant createCompte(CompteCourant compte) {
         logger.info("EJB - Création d'un nouveau compte");
         return compteCourantDAO.create(compte);
     }
-    
-    @Override
-    public void updateSolde(Integer idCompte, Double nouveauSolde) {
-        logger.info("EJB - Mise à jour du solde du compte {}: {}", idCompte, nouveauSolde);
-        // Implémentation à adapter pour Double
-    }
-    
+
     @Override
     public boolean compteExiste(Integer idCompte) {
+        logger.debug("EJB - Vérification existence compte: {}", idCompte);
         return compteCourantDAO.findById(idCompte).isPresent();
+    }
+
+    @Override
+    public void updateSolde(Integer idCompte, Double nouveauSolde) {
+        logger.info("EJB - Mise à jour solde compte {}: {}", idCompte, nouveauSolde);
+        // Conversion Double to BigDecimal et appel DAO
+        compteCourantDAO.updateSolde(idCompte, java.math.BigDecimal.valueOf(nouveauSolde));
     }
 }

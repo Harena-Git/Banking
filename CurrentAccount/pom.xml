@@ -4,21 +4,22 @@
          xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 
          http://maven.apache.org/xsd/maven-4.0.0.xsd">
     <modelVersion>4.0.0</modelVersion>
-    
+
     <groupId>com.example.banking</groupId>
     <artifactId>currentaccount</artifactId>
     <version>1.0.0</version>
     <packaging>war</packaging>
     <name>Current Account Microservice</name>
-    
+
     <properties>
         <maven.compiler.source>21</maven.compiler.source>
         <maven.compiler.target>21</maven.compiler.target>
         <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
         <jackson.version>2.16.1</jackson.version>
         <slf4j.version>2.0.9</slf4j.version>
+        <version.wildfly.ejb>4.0.0.Final</version.wildfly.ejb>
     </properties>
-    
+
     <dependencies>
         <!-- Servlet API -->
         <dependency>
@@ -27,21 +28,37 @@
             <version>6.0.0</version>
             <scope>provided</scope>
         </dependency>
-        
+
+        <!-- EJB API -->
+        <dependency>
+            <groupId>jakarta.ejb</groupId>
+            <artifactId>jakarta.ejb-api</artifactId>
+            <version>4.0.0</version>
+            <scope>provided</scope>
+        </dependency>
+
+        <!-- WildFly EJB Client pour l'accès remote -->
+        <dependency>
+            <groupId>org.wildfly</groupId>
+            <artifactId>wildfly-ejb-client-bom</artifactId>
+            <version>${version.wildfly.ejb}</version>
+            <type>pom</type>
+        </dependency>
+
         <!-- MySQL Connector -->
         <dependency>
             <groupId>com.mysql</groupId>
             <artifactId>mysql-connector-j</artifactId>
             <version>8.3.0</version>
         </dependency>
-        
+
         <!-- JSON Processing -->
         <dependency>
             <groupId>com.fasterxml.jackson.core</groupId>
             <artifactId>jackson-databind</artifactId>
             <version>${jackson.version}</version>
         </dependency>
-        
+
         <!-- Logging -->
         <dependency>
             <groupId>org.slf4j</groupId>
@@ -53,7 +70,7 @@
             <artifactId>slf4j-simple</artifactId>
             <version>${slf4j.version}</version>
         </dependency>
-        
+
         <!-- Connection Pool -->
         <dependency>
             <groupId>org.apache.commons</groupId>
@@ -61,7 +78,7 @@
             <version>2.9.0</version>
         </dependency>
     </dependencies>
-    
+
     <build>
         <finalName>currentaccount</finalName>
         <plugins>
@@ -72,10 +89,9 @@
                 <configuration>
                     <source>21</source>
                     <target>21</target>
-                    <compilerArgs>--enable-preview</compilerArgs>
                 </configuration>
             </plugin>
-            
+
             <plugin>
                 <groupId>org.apache.maven.plugins</groupId>
                 <artifactId>maven-war-plugin</artifactId>
