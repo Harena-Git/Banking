@@ -30,3 +30,20 @@ Banking/
     │                   └── currentaccount/
     │                       └── CurrentAccountApplicationTests.java
     └── README.md  # Optionnel pour docs
+
+    # Integration proggressive du projet :
+    CurrentAccount/
+├── src/
+│   └── main/
+│       └── java/
+│           └── com/
+│               └── example/
+│                   └── banking/
+│                       └── currentaccount/
+│                           ├── ejb/
+│                           │   ├── CompteCourantEJB.java          # EJB Local
+│                           │   └── CompteCourantEJBRemote.java    # EJB Remote
+│                           ├── service/
+│                           │   └── CompteCourantService.java      # Modifié pour utiliser EJB
+│                           └── controller/
+│                               └── CompteCourantServlet.java      # Inchangé

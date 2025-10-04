@@ -1,9 +1,19 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
+  <component name="AutoImportSettings">
+    <option name="autoReloadType" value="SELECTIVE" />
+  </component>
   <component name="ChangeListManager">
     <list default="true" id="f0badbd1-79b0-4d2e-93f6-17e99da0d022" name="Changes" comment="">
+      <change afterPath="$PROJECT_DIR$/Loan/src/main/java/com/example/banking/loan/ejb/PretEJB.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Loan/src/main/java/com/example/banking/loan/ejb/PretEJBRemote.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/CurrentAccount/src/main/java/com/example/banking/currentaccount/service/CompteCourantService.java" beforeDir="false" afterPath="$PROJECT_DIR$/CurrentAccount/src/main/java/com/example/banking/currentaccount/service/CompteCourantService.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/DepositAccount/Services/IDepotService.cs" beforeDir="false" afterPath="$PROJECT_DIR$/DepositAccount/Services/IDepotService.cs" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/DepositAccount/obj/Debug/net8.0/DepositAccount.AssemblyInfo.cs" beforeDir="false" afterPath="$PROJECT_DIR$/DepositAccount/obj/Debug/net8.0/DepositAccount.AssemblyInfo.cs" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/DepositAccount/obj/Debug/net8.0/DepositAccount.AssemblyInfoInputs.cache" beforeDir="false" afterPath="$PROJECT_DIR$/DepositAccount/obj/Debug/net8.0/DepositAccount.AssemblyInfoInputs.cache" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Structure.txt" beforeDir="false" afterPath="$PROJECT_DIR$/Structure.txt" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -13,11 +23,14 @@
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
-  <component name="ProjectColorInfo"><![CDATA[{
-  "customColor": "",
-  "associatedIndex": 2
-}]]></component>
+  <component name="ProjectColorInfo">{
+  &quot;customColor&quot;: &quot;&quot;,
+  &quot;associatedIndex&quot;: 2
+}</component>
   <component name="ProjectId" id="33YsFQ4uPtFEvZzmDFphAg0byMe" />
+  <component name="ProjectLevelVcsManager">
+    <ConfirmationsSetting value="2" id="Add" />
+  </component>
   <component name="ProjectViewState">
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
@@ -26,10 +39,16 @@
   "keyToString": {
     "ModuleVcsDetector.initialDetectionPerformed": "true",
     "RunOnceActivity.ShowReadmeOnStart": "true",
+    "RunOnceActivity.TerminalTabsStorage.copyFrom.TerminalArrangementManager.252": "true",
     "RunOnceActivity.git.unshallow": "true",
-    "git-widget-placeholder": "Code__Basique__Creation",
+    "git-widget-placeholder": "Integration__EJB",
     "junie.onboarding.icon.badge.shown": "true",
     "kotlin-language-version-configured": "true",
+    "node.js.detected.package.eslint": "true",
+    "node.js.detected.package.tslint": "true",
+    "node.js.selected.package.eslint": "(autodetect)",
+    "node.js.selected.package.tslint": "(autodetect)",
+    "nodejs_package_manager_path": "npm",
     "to.speed.mode.migration.done": "true",
     "vue.rearranger.settings.migration": "true"
   }
@@ -50,10 +69,23 @@
       <option name="presentableId" value="Default" />
       <updated>1759505240096</updated>
       <workItem from="1759505242201" duration="13000" />
+      <workItem from="1759542101735" duration="156000" />
+      <workItem from="1759548030819" duration="4866000" />
     </task>
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="3" />
+  </component>
+  <component name="Vcs.Log.Tabs.Properties">
+    <option name="TAB_STATES">
+      <map>
+        <entry key="MAIN">
+          <value>
+            <State />
+          </value>
+        </entry>
+      </map>
+    </option>
   </component>
 </project>

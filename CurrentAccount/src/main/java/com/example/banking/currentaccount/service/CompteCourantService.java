@@ -11,10 +11,14 @@ import com.example.banking.currentaccount.dao.CompteCourantDAO;
 import com.example.banking.currentaccount.dao.TransactionDAO;
 import com.example.banking.currentaccount.model.CompteCourant;
 import com.example.banking.currentaccount.model.Transaction;
+import com.example.banking.currentaccount.ejb.CompteCourantEJB;
 
 public class CompteCourantService {
     private static final Logger logger = LoggerFactory.getLogger(CompteCourantService.class);
-    
+
+    @EJB
+    private CompteCouranteEJB CompteCourantEJB;
+
     private final CompteCourantDAO compteCourantDAO;
     private final TransactionDAO transactionDAO;
     
@@ -22,15 +26,18 @@ public class CompteCourantService {
         this.compteCourantDAO = new CompteCourantDAO();
         this.transactionDAO = new TransactionDAO();
     }
-    
+
     public List<CompteCourant> getAllComptes() {
-        logger.debug("Récupération de tous les comptes");
-        return compteCourantDAO.findAll();
+        return compteCourantEJB.getAllComptes();
     }
-    
+
     public Optional<CompteCourant> getCompteById(Integer id) {
-        logger.debug("Recherche du compte avec ID: {}", id);
-        return compteCourantDAO.findById(id);
+        CompteCourant compte = compteCourantEJB.getCompteById(id);
+        return Optional.ofNullable(compte);
+    }
+
+    public boolean compteExiste(Integer idCompte) {
+        return compteCourantEJB.compteExiste(idCompte);
     }
     
     public CompteCourant createCompte(CompteCourant compte) {

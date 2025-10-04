@@ -1,14 +1,21 @@
-using DepositAccount.Models;
+using System.ServiceModel;
+using System.Collections.Generic;
 
 namespace DepositAccount.Services
 {
+    [ServiceContract]
     public interface IDepotService
     {
-        Task<List<Depot>> GetAllDepotsAsync();
-        Task<Depot?> GetDepotByIdAsync(int id);
-        Task<Depot> CreateDepotAsync(Depot depot);
-        Task<Depot?> UpdateDepotAsync(int id, Depot depot);
-        Task<bool> DeleteDepotAsync(int id);
-        Task<List<Depot>> GetDepotsByCompteAsync(int idCompteCourant);
+        [OperationContract]
+        List<Depot> GetDepotsByCompte(int idCompte);
+
+        [OperationContract]
+        Depot GetDepotById(int id);
+
+        [OperationContract]
+        Depot CreateDepot(Depot depot);
+
+        [OperationContract]
+        bool DepotExists(int id);
     }
 }
