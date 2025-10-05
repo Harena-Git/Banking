@@ -5,15 +5,8 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="f0badbd1-79b0-4d2e-93f6-17e99da0d022" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/CurrentAccount/Struct_with_EJB.txt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/CurrentAccount/src/main/java/com/example/banking/currentaccount/ejb/TransactionEJB.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/CurrentAccount/src/main/java/com/example/banking/currentaccount/ejb/TransactionEJBRemote.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/CurrentAccount/src/main/resources/META-INF/ejb-jar.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/CurrentAccount/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/CurrentAccount/pom.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/CurrentAccount/src/main/java/com/example/banking/currentaccount/ejb/CompteCourantEJB.java" beforeDir="false" afterPath="$PROJECT_DIR$/CurrentAccount/src/main/java/com/example/banking/currentaccount/ejb/CompteCourantEJB.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/CurrentAccount/src/main/java/com/example/banking/currentaccount/ejb/CompteCourantEJBRemote.java" beforeDir="false" afterPath="$PROJECT_DIR$/CurrentAccount/src/main/java/com/example/banking/currentaccount/ejb/CompteCourantEJBRemote.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/CurrentAccount/src/main/java/com/example/banking/currentaccount/service/CompteCourantService.java" beforeDir="false" afterPath="$PROJECT_DIR$/CurrentAccount/src/main/java/com/example/banking/currentaccount/service/CompteCourantService.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/CurrentAccount/Struct_with_EJB.txt" beforeDir="false" afterPath="$PROJECT_DIR$/CurrentAccount/Struct_with_EJB.txt" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -71,7 +64,8 @@
       <workItem from="1759505242201" duration="13000" />
       <workItem from="1759542101735" duration="156000" />
       <workItem from="1759548030819" duration="4900000" />
-      <workItem from="1759559457589" duration="3731000" />
+      <workItem from="1759559457589" duration="3901000" />
+      <workItem from="1759689504058" duration="2297000" />
     </task>
     <servers />
   </component>

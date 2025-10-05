@@ -1,7 +1,7 @@
 CurrentAccount/
 ├── src/
 │   └── main/
-│       ├── java/
+│       ├── java/er
 │       │   └── com/
 │       │       └── example/
 │       │           └── banking/
