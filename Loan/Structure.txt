@@ -1,38 +1,22 @@
-Banking/
-└── Loan/
-    ├── pom.xml
-    ├── src/
-    │   ├── main/
-    │   │   ├── java/
-    │   │   │   └── com/
-    │   │   │       └── example/
-    │   │   │           └── banking/
-    │   │   │               └── loan/
-    │   │   │                   ├── controller/
-    │   │   │                   │   ├── PretServlet.java
-    │   │   │                   │   └── PretValuesServlet.java
-    │   │   │                   ├── dao/
-    │   │   │                   │   ├── PretDAO.java
-    │   │   │                   │   ├── PretValuesDAO.java
-    │   │   │                   │   └── DatabaseConnection.java
-    │   │   │                   ├── model/
-    │   │   │                   │   ├── Pret.java
-    │   │   │                   │   └── PretValues.java
-    │   │   │                   ├── service/
-    │   │   │                   │   ├── PretService.java
-    │   │   │                   │   └── PretValuesService.java
-    │   │   │                   └── filter/
-    │   │   │                       └── CorsFilter.java
-    │   │   ├── webapp/
-    │   │   │   ├── WEB-INF/
-    │   │   │   │   └── web.xml
-    │   │   │   └── index.jsp
-    │   │   └── resources/
-    │   │       └── database.properties
-    │   └── test/
-    │       └── java/
-    │           └── com/
-    │               └── example/
-    │                   └── banking/
-    │                       └── loan/
-    └── README.md
+Loan/
+├── src/
+│   └── main/
+│       ├── java/
+│       │   └── com/
+│       │       └── example/
+│       │           └── banking/
+│       │               └── loan/
+│       │                   ├── ejb/                          # NOUVEAU
+│       │                   │   ├── PretEJBRemote.java
+│       │                   │   ├── PretEJB.java
+│       │                   │   ├── PretValuesEJBRemote.java
+│       │                   │   └── PretValuesEJB.java
+│       │                   ├── service/
+│       │                   │   ├── PretService.java         # MODIFIÉ
+│       │                   │   └── PretValuesService.java   # MODIFIÉ
+│       │                   └── controller/
+│       │                       └── PretServlet.java         # NOUVEAU (remplace Controller)
+│       └── resources/
+│           └── META-INF/
+│               └── ejb-jar.xml                              # NOUVEAU
+└── pom.xml                                                 # MODIFIÉ

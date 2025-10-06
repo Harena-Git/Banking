@@ -5,8 +5,23 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="f0badbd1-79b0-4d2e-93f6-17e99da0d022" name="Changes" comment="">
+      <change afterPath="$PROJECT_DIR$/Loan/src/main/java/com/example/banking/loan/ejb/PretValuesEJB.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Loan/src/main/java/com/example/banking/loan/ejb/PretValuesEJBRemote.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Loan/src/main/resources/META-INF/ejb-jar.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/CurrentAccount/Struct_with_EJB.txt" beforeDir="false" afterPath="$PROJECT_DIR$/CurrentAccount/Struct_with_EJB.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Loan/README" beforeDir="false" afterPath="$PROJECT_DIR$/Loan/README" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Loan/Structure.txt" beforeDir="false" afterPath="$PROJECT_DIR$/Loan/Structure.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Loan/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/Loan/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Loan/src/main/java/com/example/banking/loan/controller/PretServlet.java" beforeDir="false" afterPath="$PROJECT_DIR$/Loan/src/main/java/com/example/banking/loan/controller/PretServlet.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Loan/src/main/java/com/example/banking/loan/dao/DatabaseConnection.java" beforeDir="false" afterPath="$PROJECT_DIR$/Loan/src/main/java/com/example/banking/loan/dao/DatabaseConnection.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Loan/src/main/java/com/example/banking/loan/dao/PretDAO.java" beforeDir="false" afterPath="$PROJECT_DIR$/Loan/src/main/java/com/example/banking/loan/dao/PretDAO.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Loan/src/main/java/com/example/banking/loan/dao/PretValuesDAO.java" beforeDir="false" afterPath="$PROJECT_DIR$/Loan/src/main/java/com/example/banking/loan/dao/PretValuesDAO.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Loan/src/main/java/com/example/banking/loan/ejb/PretEJB.java" beforeDir="false" afterPath="$PROJECT_DIR$/Loan/src/main/java/com/example/banking/loan/ejb/PretEJB.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Loan/src/main/java/com/example/banking/loan/ejb/PretEJBRemote.java" beforeDir="false" afterPath="$PROJECT_DIR$/Loan/src/main/java/com/example/banking/loan/ejb/PretEJBRemote.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Loan/src/main/java/com/example/banking/loan/service/PretService.java" beforeDir="false" afterPath="$PROJECT_DIR$/Loan/src/main/java/com/example/banking/loan/service/PretService.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Loan/src/main/java/com/example/banking/loan/service/PretValuesService.java" beforeDir="false" afterPath="$PROJECT_DIR$/Loan/src/main/java/com/example/banking/loan/service/PretValuesService.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Loan/src/main/resources/database.properties" beforeDir="false" afterPath="$PROJECT_DIR$/Loan/src/main/resources/database.properties" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Loan/src/main/webapp/WEB-INF/web.xml" beforeDir="false" afterPath="$PROJECT_DIR$/Loan/src/main/webapp/WEB-INF/web.xml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -15,6 +30,9 @@
   </component>
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
+  <component name="HighlightingSettingsPerFile">
+    <setting file="file://$PROJECT_DIR$/CurrentAccount/src/main/java/com/example/banking/currentaccount/service/CompteCourantService.java" root0="FORCE_HIGHLIGHTING" />
   </component>
   <component name="ProjectColorInfo">{
   &quot;customColor&quot;: &quot;&quot;,
@@ -65,7 +83,8 @@
       <workItem from="1759542101735" duration="156000" />
       <workItem from="1759548030819" duration="4900000" />
       <workItem from="1759559457589" duration="3901000" />
-      <workItem from="1759689504058" duration="2297000" />
+      <workItem from="1759689504058" duration="2553000" />
+      <workItem from="1759736367777" duration="7571000" />
     </task>
     <servers />
   </component>

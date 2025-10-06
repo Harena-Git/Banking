@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ejb-jar version="4.0"
+         xmlns="https://jakarta.ee/xml/ns/jakartaee"
+         xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+         xsi:schemaLocation="https://jakarta.ee/xml/ns/jakartaee
+         https://jakarta.ee/xml/ns/jakartaee/ejb-jar_4_0.xsd">
+
+    <display-name>Loan EJB Module</display-name>
+
+    <enterprise-beans>
+        <session>
+            <ejb-name>PretEJB</ejb-name>
+            <business-remote>com.example.banking.loan.ejb.PretEJBRemote</business-remote>
+            <ejb-class>com.example.banking.loan.ejb.PretEJB</ejb-class>
+            <session-type>Stateless</session-type>
+            <transaction-type>Container</transaction-type>
+        </session>
+
+        <session>
+            <ejb-name>PretValuesEJB</ejb-name>
+            <business-remote>com.example.banking.loan.ejb.PretValuesEJBRemote</business-remote>
+            <ejb-class>com.example.banking.loan.ejb.PretValuesEJB</ejb-class>
+            <session-type>Stateless</session-type>
+            <transaction-type>Container</transaction-type>
+        </session>
+    </enterprise-beans>
+</ejb-jar>

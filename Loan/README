@@ -48,4 +48,12 @@ cp target/loan.war /chemin/vers/wildfly/standalone/deployments/
 - ✅ Connection pooling MySQL
 - ✅ Documentation complète
 
-**Prochain microservice : Central ou DepositAccount ?** 😊
+COMMENT LE CENTRAL VA APPELER CE MICROSERVICE
+
+// JNDI Lookup
+String jndiName = "ejb:/loan/PretEJB!com.example.banking.loan.ejb.PretEJBRemote";
+PretEJBRemote pretEJB = (PretEJBRemote) context.lookup(jndiName);
+
+// Appel direct
+List<Pret> prets = pretEJB.getPretsByCompte(1);
+Double mensualite = pretEJB.calculerMensualite(10000.0, 3.5, 36);
