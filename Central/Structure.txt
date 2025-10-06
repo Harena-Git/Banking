@@ -1,37 +1,36 @@
-CurrentAccount/
-├── pom.xml
+Central/
 ├── src/
-│   ├── main/
-│   │   ├── java/
-│   │   │   └── com/
-│   │   │       └── example/
-│   │   │           └── banking/
-│   │   │               └── currentaccount/
-│   │   │                   ├── controller/
-│   │   │                   │   ├── CompteCourantServlet.java
-│   │   │                   │   └── TransactionServlet.java
-│   │   │                   ├── dao/
-│   │   │                   │   ├── CompteCourantDAO.java
-│   │   │                   │   ├── TransactionDAO.java
-│   │   │                   │   └── DatabaseConnection.java
-│   │   │                   ├── model/
-│   │   │                   │   ├── CompteCourant.java
-│   │   │                   │   └── Transaction.java
-│   │   │                   ├── service/
-│   │   │                   │   ├── CompteCourantService.java
-│   │   │                   │   └── TransactionService.java
-│   │   │                   └── filter/
-│   │   │                       └── CorsFilter.java
-│   │   ├── webapp/
-│   │   │   ├── WEB-INF/
-│   │   │   │   └── web.xml
-│   │   │   └── index.jsp
-│   │   └── resources/
-│   │       └── database.properties
-│   └── test/
-│       └── java/
-│           └── com/
-│               └── example/
-│                   └── banking/
-│                       └── currentaccount/
-└── README.md
+│   └── main/
+│       ├── java/
+│       │   └── com/
+│       │       └── example/
+│       │           └── banking/
+│       │               └── central/
+│       │                   ├── ejb/                          # NOUVEAU
+│       │                   │   ├── CentralAggregationEJBRemote.java
+│       │                   │   └── CentralAggregationEJB.java
+│       │                   ├── client/                       # MODIFIÉ
+│       │                   │   ├── CurrentAccountEJBClient.java
+│       │                   │   ├── LoanEJBClient.java
+│       │                   │   └── DepositRestClient.java    # Alternative REST
+│       │                   ├── service/                      # MODIFIÉ
+│       │                   │   └── CentralService.java
+│       │                   ├── dao/                          # NOUVEAU
+│       │                   │   ├── CacheCompteDAO.java
+│       │                   │   └── DatabaseConnection.java
+│       │                   ├── model/                        # EXISTANT
+│       │                   │   ├── CompteAvecDetails.java
+│       │                   │   ├── CompteInfo.java
+│       │                   │   ├── PretInfo.java
+│       │                   │   └── DepotInfo.java
+│       │                   └── controller/
+│       │                       └── CentralServlet.java       # MODIFIÉ
+│       ├── webapp/
+│       │   ├── WEB-INF/
+│       │   │   └── web.xml
+│       │   └── index.jsp
+│       └── resources/
+│           ├── config.properties
+│           └── META-INF/
+│               └── ejb-jar.xml                              # NOUVEAU
+└── pom.xml

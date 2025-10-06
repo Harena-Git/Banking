@@ -5,23 +5,18 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="f0badbd1-79b0-4d2e-93f6-17e99da0d022" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/Loan/src/main/java/com/example/banking/loan/ejb/PretValuesEJB.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Loan/src/main/java/com/example/banking/loan/ejb/PretValuesEJBRemote.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Loan/src/main/resources/META-INF/ejb-jar.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Central/src/main/java/com/example/banking/central/client/CurrentAccountEJBClient.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Central/src/main/java/com/example/banking/central/client/DepositRestClient.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Central/src/main/java/com/example/banking/central/client/LoanEJBClient.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Central/src/main/java/com/example/banking/central/dao/CacheCompteDAO.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Central/src/main/java/com/example/banking/central/dao/DatabaseConnection.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Central/src/main/java/com/example/banking/central/ejb/CentralAggregationEJB.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Central/src/main/java/com/example/banking/central/ejb/CentralAggregationEJBRemote.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Central/src/main/resources/META-INF/ejb-jar.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Loan/README" beforeDir="false" afterPath="$PROJECT_DIR$/Loan/README" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Loan/Structure.txt" beforeDir="false" afterPath="$PROJECT_DIR$/Loan/Structure.txt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Loan/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/Loan/pom.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Loan/src/main/java/com/example/banking/loan/controller/PretServlet.java" beforeDir="false" afterPath="$PROJECT_DIR$/Loan/src/main/java/com/example/banking/loan/controller/PretServlet.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Loan/src/main/java/com/example/banking/loan/dao/DatabaseConnection.java" beforeDir="false" afterPath="$PROJECT_DIR$/Loan/src/main/java/com/example/banking/loan/dao/DatabaseConnection.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Loan/src/main/java/com/example/banking/loan/dao/PretDAO.java" beforeDir="false" afterPath="$PROJECT_DIR$/Loan/src/main/java/com/example/banking/loan/dao/PretDAO.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Loan/src/main/java/com/example/banking/loan/dao/PretValuesDAO.java" beforeDir="false" afterPath="$PROJECT_DIR$/Loan/src/main/java/com/example/banking/loan/dao/PretValuesDAO.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Loan/src/main/java/com/example/banking/loan/ejb/PretEJB.java" beforeDir="false" afterPath="$PROJECT_DIR$/Loan/src/main/java/com/example/banking/loan/ejb/PretEJB.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Loan/src/main/java/com/example/banking/loan/ejb/PretEJBRemote.java" beforeDir="false" afterPath="$PROJECT_DIR$/Loan/src/main/java/com/example/banking/loan/ejb/PretEJBRemote.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Loan/src/main/java/com/example/banking/loan/service/PretService.java" beforeDir="false" afterPath="$PROJECT_DIR$/Loan/src/main/java/com/example/banking/loan/service/PretService.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Loan/src/main/java/com/example/banking/loan/service/PretValuesService.java" beforeDir="false" afterPath="$PROJECT_DIR$/Loan/src/main/java/com/example/banking/loan/service/PretValuesService.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Loan/src/main/resources/database.properties" beforeDir="false" afterPath="$PROJECT_DIR$/Loan/src/main/resources/database.properties" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Loan/src/main/webapp/WEB-INF/web.xml" beforeDir="false" afterPath="$PROJECT_DIR$/Loan/src/main/webapp/WEB-INF/web.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Central/Structure.txt" beforeDir="false" afterPath="$PROJECT_DIR$/Central/Structure.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Central/src/main/java/com/example/banking/central/service/CentralService.java" beforeDir="false" afterPath="$PROJECT_DIR$/Central/src/main/java/com/example/banking/central/service/CentralService.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Central/src/main/resources/config.properties" beforeDir="false" afterPath="$PROJECT_DIR$/Central/src/main/resources/config.properties" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -60,10 +55,16 @@
     &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
     &quot;node.js.selected.package.tslint&quot;: &quot;(autodetect)&quot;,
     &quot;nodejs_package_manager_path&quot;: &quot;npm&quot;,
+    &quot;run.code.analysis.last.selected.profile&quot;: &quot;pProject Default&quot;,
     &quot;to.speed.mode.migration.done&quot;: &quot;true&quot;,
     &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
   }
 }</component>
+  <component name="RecentsManager">
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="D:\Cours\Architecture_Mr_Tahina\Sujet 1 Banking\Central\src\main\java\com\example\banking\central\dao" />
+    </key>
+  </component>
   <component name="SharedIndexes">
     <attachedChunks>
       <set>
@@ -84,7 +85,8 @@
       <workItem from="1759548030819" duration="4900000" />
       <workItem from="1759559457589" duration="3901000" />
       <workItem from="1759689504058" duration="2553000" />
-      <workItem from="1759736367777" duration="7571000" />
+      <workItem from="1759736367777" duration="9108000" />
+      <workItem from="1759749154359" duration="747000" />
     </task>
     <servers />
   </component>
